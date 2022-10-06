@@ -1,0 +1,290 @@
+//sp一体化作業
+@mixin fz($size) {
+    font-size: calc($size / 16) + rem;
+}
+
+//style.scss
+body {
+    width: 100vw;
+}
+
+.container__wrapper {
+    padding-top: 5%;
+}
+
+//sidebar.scss
+.carousel__navigation--list li {
+    width: auto;
+    min-width: auto;
+    @include fz(12);
+    padding: 0 20px;
+}
+
+
+//headermenu.scss
+// ドロワーメニュー ----------------------------------------------------------------
+
+#header {
+    width: 100vw;
+    border-bottom: solid 1px #ccc;
+    z-index:2;
+    top: 0;
+    background: #FFF;
+}
+
+.drawer-open .hamburger {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer-hamburger {
+    width: 16px !important;
+    padding: 0 !important;
+}
+
+.header {
+    width: 100%;
+
+    &__topcon {
+        width: 100%;
+        padding: clamp(10px, 5.3vw, 30px) 5% 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__topleft {
+        display: flex;
+        align-items: center;
+    }
+
+    &__topright {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        padding-left: 20px;
+
+        a {
+            background: url("images/logo.png") no-repeat;
+            display: block;
+            background-size: 100% auto;
+            width: 133px;
+            height: 22px;
+            white-space: nowrap;
+            text-indent: -9999px;
+        }
+    }
+
+    &__search {
+        background: url("images/spicon_search.png") no-repeat;
+        background-size: 100% auto;
+        text-indent: -9999px;
+        white-space: nowrap;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        margin-right: 16px;
+    }
+
+    &__btm {
+        width: 100vw;
+
+        &--inner {}
+    }
+}
+
+.drawer-close .drawer-hamburger {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header__logo {
+    padding-left: 0;
+
+}
+
+.newHeader__cate {
+    padding: 0 5vw;
+    width: 100%;
+    .drawer-menu-itemsmall{
+        display: none;
+    }
+    li {
+        padding: 0;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-right: clamp(16px, 4.2vw, 24px);
+
+        a {
+            display: block;
+        }
+    }
+}
+
+#newHeader__cate .menu {
+    display: flex;
+    justify-content: flex-start;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.newHeader__wrapper {
+    overflow-x: auto;
+    padding: 0 5vw 0 0;
+
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {}
+
+    &::-webkit-scrollbar-track {
+        background: #eee;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $PINK;
+        border-radius: 5px;
+    }
+
+
+}
+
+#newHeader__cate .menu li a {
+    padding-top: clamp(8px, 4vw, 20px);
+    padding-bottom: clamp(8px, 4vw, 20px);
+    padding-right: clamp(5px, 4vw, 40px);
+}
+
+
+#newHeader__cate .menu li {
+    margin: 0;
+}
+
+#header {
+    &.fixed {
+        position: fixed;
+        top: 0;
+        border-bottom: solid 1px $UB;
+        width: 100%;
+        z-index: 2;
+        background: #FFF;
+    }
+}
+
+.drawer-close .drawer-hamburger {
+    padding: 0 !important;
+}
+
+.drawer--left .drawer-hamburger {
+    margin-right: 14px;
+}
+
+.newHeader__cate--wrapper {
+    margin: 0;
+}
+
+.drawer--left .drawer-hamburger {
+    position: relative;
+    left: auto;
+}
+
+.drawer--left.drawer-open .drawer-hamburger {
+    right: 20px;
+}
+
+#navopen {
+    &.drawer-hamburger {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        margin: 0;
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+}
+
+.newHeader__drawer--inner {
+    width: 100%;
+}
+
+.drawer-open {
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+}
+
+.drawer--left.drawer-open .drawer-hamburger {
+    left: auto !important;
+}
+
+.newHeader__drawer--inner {
+    padding-top: clamp(50px, 10vw, 60px);
+}
+
+.drawer-menu li a {
+    padding: 8px 0;
+}
+
+.drawer-menu-item {
+    a {
+        font-size: 14px!important;
+        padding: 10px 0;
+
+    }
+}
+.ttlSerial{
+    margin-bottom: 8px;
+}
+.drawer-menu-itemsmall {
+        margin-bottom: 10px;
+        margin-top: -12px;
+
+    a {
+        font-size: 14px!important;
+        padding: 0 0;
+        opacity: 0.8;
+
+    }
+
+}
+
+
+//search.scss
+.search-form {
+    width: 100%;
+}
+
+.search-field {
+    width: calc(100% - 40px);
+}
+
+.search-submit {
+    min-width: 33px;
+    width: 33px;
+    max-width: 33px;
+}
+
+//catephp.scss
+.cate{
+    &__fv{
+        background: $BC;
+        padding: clamp(18px, 8vw, 50px) 5vw;
+        h1{
+            font-weight: normal;
+        }
+    }
+}
