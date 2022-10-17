@@ -15,10 +15,10 @@ $args = array(
 $the_query = new WP_Query($args);
 if($the_query -> have_posts()) :?>
 <?php while($the_query -> have_posts()) : $the_query -> the_post(); ?>
-<li <?php post_class( 'article-list'); ?> >
-    <a href="<?php echo get_permalink(); ?>" class="articles__list--link">
+<li <?php post_class( 'blclist__list'); ?> >
+    <a href="<?php echo get_permalink(); ?>" class="blclist__list--link">
         <!--画像を追加-->
-        <div class="articles__img">
+        <div class="blclist__img">
             <?php if( has_post_thumbnail() ): ?>
                 <?php the_post_thumbnail('midium'); ?>
             <?php else: ?>
@@ -27,8 +27,8 @@ if($the_query -> have_posts()) :?>
         </div>
 
 
-        <div class="articles__txtwrap">
-        <div class="articles__blc">
+        <div class="blclist__txtwrap">
+        <div class="blclist__blc">
 
             <!--カテゴリ-->
             
@@ -54,20 +54,8 @@ if($the_query -> have_posts()) :?>
 
             <!--抜粋--> 
                 <!-- タイトル --> 
-                <div class="pc">
-                  <p class="articles__excerpt">
 
-                  <?php
-                    if(mb_strlen($post->post_title)>57){
-                      $title = mb_substr($post->post_title, 0, 57);
-                      echo $title.'…';
-                    }else{
-                      echo $post->post_title;
-                    }
-                  ?>
-                  </p>
-                </div>
-                <div class="sp"><p class="articles__excerpt">
+                <p class="articles__excerpt">
                 <?php
                     if(mb_strlen($post->post_title)>33){
                       $title= mb_substr($post->post_title, 0, 33);
@@ -76,22 +64,20 @@ if($the_query -> have_posts()) :?>
                       echo $post->post_title;
                     }
                   ?>
-                </p></div>
+                </p>
 
-
-            <div class="sp">
                 <div class="articles__small">
-                <!--投稿日を表示-->
-                <span class="articles__date">
-                <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
-                    <?php echo get_the_date(); ?>
-                </time>
-                </span>
-                <!--著者を表示-->
-                <span class="articles__author">by  <?php the_author(); ?> </span>
-                </div>
-            </div>  
-            </div><!--end article__txtwrap-->
+                  <!--投稿日を表示-->
+                  <span class="articles__date">
+                  <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
+                      <?php echo get_the_date(); ?>
+                  </time>
+                  </span>
+                  <!--著者を表示-->
+                  <span class="articles__author">by  <?php the_author(); ?> </span>
+              </div>
+
+          </div><!--end article__txtwrap-->
     </a>
 </li>
 

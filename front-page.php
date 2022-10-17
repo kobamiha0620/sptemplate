@@ -16,10 +16,7 @@
         $postId01 = 8449;
         $user_id01 = get_post_field( 'post_author', $postId01 );
         $post_date01 = get_the_date( 'Y.m.d', $postId01 );
-        
-        //②星占いの記事ID（最新１件を表示）
 
-        //③固定ページのデータは手動で表示
 
       ?>
 
@@ -237,22 +234,8 @@
   </section>
 
 
-  <!-- /.TOPのみ ----------------->
-
-  <!-- 1周年記念バナー -->
-  <!-- <section class="sp"> 
-    <div class="index__inner">
-
-      <a href="https://femtech.tv/news179/" class="sidebar__bnrs">
-        <img src="https://femtech.tv/wp-content/uploads/2022/03/bnr_1st.jpg" alt="１周年記念" width="100%">
-        <p class="catephp__link">1周年スペシャル対談はこちら</p>
-      </a>
-    </div>
-    </section> -->
-  <!-- /.1周年記念バナー -->
 
   <div class="index__inner">
-    <!-- SP用padding Blc -->
 
     <!-- TOP最新記事 -->
     <section id="toparticles">
@@ -262,7 +245,7 @@
           <span class="articles__ttl--jp">最新記事</span>
         </h2>
 
-        <ul class="articles__list">
+        <ul class="newest">
           <!-- //EditorsPickを除外 -->
           <?php query_posts('post_type=post&posts_per_page=5&cat=-278, -430'); ?>
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -287,19 +270,16 @@
   <?php get_template_part('/template_parts/epick'); ?>
   <!-- EDITOR'S PICK ------------------------------------------------->
 
-
-  <div class="sp">
-    <!-- KEYWORD -->
-    <?php get_template_part('template_parts/keyword'); ?>
-    <!-- ランキング記事 -->
-    <?php get_template_part('template_parts/ranking'); ?>
-    <!-- HOT TAG -->
-    <?php get_template_part('template_parts/hottag'); ?>
-    <!-- バナー設定 -->
-    <?php get_template_part('template_parts/bnrs'); ?>
-    <!-- SERIES -->
-    <?php get_template_part('template_parts/series'); ?>
-  </div>
+  <!-- KEYWORD -->
+  <?php get_template_part('template_parts/keyword'); ?>
+  <!-- ランキング記事 -->
+  <?php get_template_part('template_parts/ranking'); ?>
+  <!-- HOT TAG -->
+  <?php get_template_part('template_parts/hottag'); ?>
+  <!-- バナー設定 -->
+  <?php get_template_part('template_parts/bnrs'); ?>
+  <!-- SERIES -->
+  <?php get_template_part('template_parts/series'); ?>
 
 
 
@@ -313,36 +293,25 @@
   <!-- EDITOR'S CHOICE ------------------------------------------------->
 
 
-  <!--
-  <div class="sp">
-  /* get_template_part('template_parts/insta'); */
-  </div>
-  -->
 
-  <!-- コンタクトフォームの追加 -->
-
-  <!-- コンタクトフォームの追加 -->
-
+  
 
   <div class="index__inner">
-    <!-- SP用padding Blc -->
-    <div class="sp">
       <section class="spbtm">
+        <div class="spbtm__inner">
         <h2 class="spbtm__ttl">フェムテックtv</h2>
         <p class="spbtm__txt">生理、PMS、セクシャルな問題など自分のカラダについて、たった1人で悩んでいる皆さんへ。<br>
           大切なのは、「知る」「共有する」こと。<br>
           このフェムテックtvは、自分のカラダについての“知らなかった”をなくすためのフェムテック情報共有サイトです。<br>
           毎日をイキイキと、自分らしく過ごすために。<br>正しい情報を知って、話して、整える輪を広め、悩める女性がいなくなる世の中を目指します。</p>
+          </div>
       </section>
-    </div>
   </div><!-- index__inner -->
 
   <!-- EDITOR Introduce ------------------------------------------------->
   <div class="index__inner">
-    <!-- SP用padding Blc -->
-    <div class="sp">
+
       <?php get_template_part('/template_parts/editorsIntro'); ?>
-    </div>
 
   </div><!-- index__inner -->
   <!-- EDITOR Introduce ------------------------------------------------->
@@ -351,7 +320,6 @@
 </div>
 <!--end contents-->
 
-<div class="pc"><?php get_sidebar(); ?></div>
 
 
 

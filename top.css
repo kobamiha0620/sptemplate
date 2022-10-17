@@ -219,7 +219,7 @@ li {
 }
 
 /* SP 画面サイズが748px以下 */
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 980px) {
   .pc {
     display: none;
   }
@@ -247,7 +247,7 @@ li {
   }
 }
 /* PC 画面サイズが750px以上 */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 981px) {
   .pc {
     display: block;
   }
@@ -423,7 +423,7 @@ li {
   padding-top: 46px;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 980px) {
   .slick-dots {
     bottom: -30px;
   }

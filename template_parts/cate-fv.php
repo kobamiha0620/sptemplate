@@ -1,5 +1,6 @@
 
-<section class="cate__fv">
+<section class="cate__fv" id="cateTop">
+    <div class="cate__fv--inner">
 <h1 class="fontM"><?php single_cat_title(); ?></h1>
 <?php if(is_category('pms')) : ?>
 <!-- pms生理 -->
@@ -31,5 +32,5 @@
 
 <?php endif; ?>
 
-
+</div>
 </section>

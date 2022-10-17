@@ -5,7 +5,7 @@
       <div class="page__contents">
       <section class="page__fv">
         <h2 class="page__ttl">
-            <span class="page__ttl--en">Privacy policy</span>
+            <span class="page__ttl--en">Privacy policy</span><br>
             <span class="page__ttl--jp">プライバシーポリシー</span>
         </h2>
 

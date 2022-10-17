@@ -1,10 +1,9 @@
 <div class="side__editorsIntro">
     <section class="editorsIntro">
         <h2 class="articles__ttl">
-            <span class="articles__ttl--en">EDITOR</span>
+            <span class="articles__ttl--en">EDITOR</span><br>
             <span class="articles__ttl--jp">編集部紹介</span>
         </h2>
-
         <ul class="editorsIntro__list">
             <li>
                 <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_akiko.png" alt="Akiko">
@@ -18,9 +17,8 @@
                 <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_makiko.png" alt="Makiko">
                 <p class="editorsIntro__list--name">Makiko</p>
             </li>
-
         </ul>
-        <ul class="editorsIntro__listbtm editorsIntro__list">
+        <ul class="editorsIntro__listbtm">
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icon_sakamoto.png" alt="Sayaka">
                 <p class="editorsIntro__list--name">Sayaka</p>

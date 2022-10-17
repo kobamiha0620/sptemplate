@@ -182,25 +182,6 @@
         </section>
 
 
-        <!--タグ取得-->
-        <!-- <section class="single__fv--catewrap">
-          <ul class="single__fv--cate">
-            <?php
-              // $tags = get_the_tags();
-              // foreach( $tags as $tag) { 
-              // echo '<li><a href="'. get_tag_link($tag->term_id) .'">#' . $tag->name . '</a></li>';
-              // }
-              ?>
-          </ul>
-        </section> -->
-
-<!-- 
-        <div class="single__linkto">
-          <?php //previous_post_link('%link', '&lt; &nbsp;前の記事'); ?>
-          <?php //next_post_link('%link', '次の記事 &nbsp; &gt;'); ?>
-        </div> -->
-
-
 
 
         <!-- コメント部分 -->
@@ -221,31 +202,15 @@
         </section>
         <!-- コメント部分 -->
 
-  <!-- EDITOR'S PICK ------------------------------------------------->
-<!-- 
-  <div class="single__epick">
-    <?php
-    
-    #get_template_part('/template_parts/epick'); ?>
-  </div> -->
-
-  <!-- EDITOR'S PICK ------------------------------------------------->
 
 
         <!-- おすすめ -->
         <section id="recomArticle" class="articlesWrapper">
           <div class="articles" id="articles">
             <h2 class="articles__ttl">この記事を読んだあなたにおすすめ</h2>
-            <ul class="articles__list">
+            <ul class="blclist">
 
-            <?php // if ( has_category( 'pick' ) ) : ?>
-              <?php // get_template_part('template_parts/recommendRandom');?>
-            <?php //else: ?>
-              <?php // get_template_part('template_parts/recommendArticle');?>
-
-            <?php // endif; ?>
-            
-            <?php  get_template_part('template_parts/relatedarticles');?>
+             <?php  get_template_part('template_parts/relatedarticles');?>
 
             </ul>
           </div><!-- articles -->
@@ -277,10 +242,10 @@
     <section id="latestArticle" class="articlesWrapper">
       <div class="articles" id="articles">
         <h2 class="articles__ttl">
-          <span class="articles__ttl--en">NEW ARRIVAL</span>
+          <span class="articles__ttl--en">NEW ARRIVAL</span><br>
           <span class="articles__ttl--jp">最新記事</span>
         </h2>
-        <ul class="articles__list">
+        <ul class="varticle">
           <?php
                 //$argsのプロパティを変えていく
                 $args = array(
@@ -295,7 +260,7 @@
                 $the_query = new WP_Query($args);
                 if ($the_query->have_posts()) :
                   while ($the_query->have_posts()) : $the_query->the_post();
-                    get_template_part('template_parts/newestArticle');
+                    get_template_part('template_parts/newestArticleVertical');
 
                   endwhile;
                 endif;
@@ -313,10 +278,6 @@
 </div>
 <!--end contents-->
 
-
-
-
-<div class="pc"><?php get_sidebar(); ?></div>
 
 </div>
 <!--end container-->

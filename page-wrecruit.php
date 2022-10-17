@@ -28,9 +28,6 @@
 
     </div><!-- /#page -->
 
-
-
-    <div class="sp">
         <!-- KEYWORD -->
         <?php get_template_part('template_parts/keyword'); ?>
         <!-- ランキング記事 -->
@@ -41,7 +38,6 @@
 
         <!-- SERIES -->
         <?php get_template_part('template_parts/series'); ?>
-    </div>
 
 
     <!-- EDITOR'S CHOICE ------------------------------------------------->
@@ -52,20 +48,11 @@
     <!-- EDITOR'S CHOICE ------------------------------------------------->
 
 
-    <!--
-    <div class="sp">
-    /* get_template_part('template_parts/insta'); */
-    </div>
-    -->
-
 
 </div>
 <!--end contents-->
 
 
-
-
-<div class="pc"><?php get_sidebar(); ?></div>
 
 
 <!-- <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/page.js"></script> -->

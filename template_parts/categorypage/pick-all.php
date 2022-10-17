@@ -13,7 +13,7 @@
                     'post_status' => 'publish',
                     'paged' => $paged,
                     'category_name' => 'pick',
-                    'posts_per_page' => 20, // 表示件数
+                    'posts_per_page' => 21, // 表示件数
                     'orderby'     => 'date'
                     ) );
                 

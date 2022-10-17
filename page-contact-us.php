@@ -6,7 +6,7 @@
       <div class="page__contents">
       <section class="page__fv">
         <h2 class="page__ttl">
-            <span class="page__ttl--en">Contact</span>
+            <span class="page__ttl--en">Contact</span><br>
             <span class="page__ttl--jp">お問い合わせ</span>
         </h2>
 

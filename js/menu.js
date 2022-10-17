@@ -184,8 +184,10 @@ jQuery(function ($) {
 		speed: 200, // 自動再生でスライドさせるスピード
 		arrows: true, // 左右の次へ、前へボタンを表示
 		dots: false, // 画像下のドット（ページ送り）を表示
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
+		centerPadding: '6%',
+
 		responsive: [{
 			breakpoint: 768,　
 			settings: {
@@ -197,7 +199,7 @@ jQuery(function ($) {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				centerMode: true,
-				centerPadding: '25vw'
+				centerPadding: '25%'
 			 }
 		 }]
 	});

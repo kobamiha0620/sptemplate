@@ -5,7 +5,7 @@
       <div class="page__contents">
       <section class="page__fv">
         <h2 class="page__ttl">
-            <span class="page__ttl--en">Company Information</span>
+            <span class="page__ttl--en">Company Information</span><br>
             <span class="page__ttl--jp">会社概要</span>
         </h2>
 

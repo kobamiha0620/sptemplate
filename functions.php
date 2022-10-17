@@ -161,7 +161,7 @@ function my_wpp_custom_html( $mostpopular, $instance ){
       // タイトル・アイキャッチ画像・ページビュー数を取得
 		$output .= 
     '<div class="sideConlist__inner">'. 
-    '<p class="sideConlist__img">'. get_the_post_thumbnail( $popular->id, 'midium' ). '</p>' . 
+    '<div class="sideConlist__img"><div class="sideConlist__img--blc">'. get_the_post_thumbnail( $popular->id, 'midium' ). '</div></div>' . 
     '<div class="sideConlist__blc">'. 
     '<div class="sideConlist__blc pageblc">';
     for($i = 0; count($get_the_category) > $i; $i++){
@@ -466,3 +466,5 @@ function template_include_change($template) {
     $init['apply_source_formatting'] = ture;
     return $init;
     });
+
+

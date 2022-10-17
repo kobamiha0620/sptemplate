@@ -26,19 +26,14 @@
       <?php get_template_part('/template_parts/sharesns'); ?>
       <!-- sns共有 -->
     </div>
+
         <?php the_content(); ?>
 
-
-        <div class="pc" style="margin: 50px auto 80px;">
-        <div class="page__luna--keisan">
-            <img src="https://femtech.tv/wp-content/uploads/2022/01/moon.png" alt="Coming soon" width="100%">
-        </div>
     </div>
-    <div class="sp">
+
         <div class="page__luna--keisan">
             <img src="https://femtech.tv/wp-content/uploads/2022/01/moonSp.png" alt="Coming soon" width="100%">
         </div>
-    </div>
 
 
     <div class="single__contents">
@@ -79,10 +74,10 @@
     <section id="latestArticle" class="articlesWrapper">
       <div class="articles" id="articles">
         <h2 class="articles__ttl">
-          <span class="articles__ttl--en">NEW ARRIVAL</span>
+          <span class="articles__ttl--en">NEW ARRIVAL</span><br>
           <span class="articles__ttl--jp">最新記事</span>
         </h2>
-        <ul class="articles__list">
+        <ul class="varticle">
           <?php
                 //$argsのプロパティを変えていく
                 $args = array(
@@ -96,8 +91,8 @@
                 $the_query = new WP_Query($args);
                 if ($the_query->have_posts()) :
                   while ($the_query->have_posts()) : $the_query->the_post();
-                    get_template_part('template_parts/newestArticle');
-
+                    get_template_part('template_parts/newestArticleVertical');
+                    //横ならび
                   endwhile;
                 endif;
                 wp_reset_postdata();
@@ -117,7 +112,6 @@
 
 
 
-<div class="pc"><?php get_sidebar(); ?></div>
 
 </div>
 <!--end container-->

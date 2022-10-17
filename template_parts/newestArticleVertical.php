@@ -1,19 +1,20 @@
 
     
 
-    <li <?php post_class( 'article-list'); ?> >
+    <li <?php post_class( 'varticle__list'); ?> >
         <a href="<?php echo get_permalink(); ?>" class="">
             <!--画像を追加-->
-            <div class="newest__img">
-                <div class="newest__img--blc">
-                <?php if( has_post_thumbnail() ): ?>
-                    <?php the_post_thumbnail('medium'); ?>
-                <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.gif" alt="no-img"/>
-                <?php endif; ?>
+            <div class="newest__img--blc">
+                <div class="newest__img">
+                    <?php if( has_post_thumbnail() ): ?>
+                        <?php the_post_thumbnail('medium'); ?>
+                    <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.gif" alt="no-img"/>
+                    <?php endif; ?>
+                </div>
             </div>
-            </div>
-
+            
+            <div class="varticle__blc">
             <div class="newest__cateblc">
                 <!--カテゴリ-->
             
@@ -25,7 +26,7 @@
                       <?php } ?>
                   <?php endif; ?>
           
-                </div>
+            </div>
 
                 <!-- タイトル --> 
 
@@ -53,7 +54,7 @@
                   
                 </div>
 
-
+                </div>
         </a>
     </li>
 

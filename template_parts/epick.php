@@ -15,7 +15,7 @@
       array(
         'post_type' => 'post', // 投稿タイプ
         'post_status' => 'publish', //公開済みのページのみ取得
-        'posts_per_page' => 12, // 表示件数
+        'posts_per_page' => 9, // 表示件数
         'category_name' => 'pick', //editor's choiceの記事のみ
         'orderby' => 'date' // 表示順の基準
       )

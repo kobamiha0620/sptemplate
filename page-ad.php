@@ -6,7 +6,7 @@
       <div class="page__contents">
       <section class="page__fv">
         <h2 class="page__ttl">
-            <span class="page__ttl--en">Information</span>
+            <span class="page__ttl--en">Information</span><br>
             <span class="page__ttl--jp">メディア関係者の皆様へ</span>
         </h2>
 
