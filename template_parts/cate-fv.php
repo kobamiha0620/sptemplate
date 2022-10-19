@@ -30,6 +30,10 @@
     <p class="catephp__txt">20〜40代の男女各300名を対象に、独自のアンケート調査を実施。女性の体にまつわる現代の「リアル」を、調査結果データをもとに紐解いていきます。</p>
 <a href="https://femtech.tv/about_marketresearch/" rel="noopener" class="catephp__link">アンケートデータの使用について</a>
 
+
+<?php elseif(is_category('serial')) : ?>
+    <p class="catephp__txt">各ジャンルのプロフェッショナルによる、フェムテック、生理、PMSなど女性のココロと体の健康にまつわるストーリー。現代女性を温かく後押しします。</p>
+
 <?php endif; ?>
 
 </div>

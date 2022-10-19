@@ -1,7 +1,7 @@
 <div class="side__editorsIntro">
     <section class="editorsIntro">
         <h2 class="articles__ttl">
-            <span class="articles__ttl--en">EDITOR</span><br>
+            <span class="articles__ttl--en">EDITOR</span>
             <span class="articles__ttl--jp">編集部紹介</span>
         </h2>
         <ul class="editorsIntro__list">

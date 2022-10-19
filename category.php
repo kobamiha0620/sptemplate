@@ -13,7 +13,7 @@
   <section id="categoryNew" class="articlesWrapper">
     <div class="articles" id="articles">
       <h2 class="articles__ttl">
-          <span class="articles__ttl--en">NEW ARRIVAL</span><br>
+          <span class="articles__ttl--en">NEW ARRIVAL</span>
           <span class="articles__ttl--jp"><?php single_cat_title(); ?>最新記事</span>
       </h2>            
       <ul class="articles__list" id="newArrival">

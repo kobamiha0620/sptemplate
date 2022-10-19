@@ -31,10 +31,11 @@
 </head>
 
 <body <?php body_class( ['drawer', 'drawer--left'] ) ; ?> style="background-color:#FFF; ">
+<div id="navigation"></div>
 	<header>
 		<!-- ヘッダーここから -->
 		<!-- ナビゲーションの中身 -->
-		<nav class="drawer-nav newHeader__drawer" role="navigation">
+		<nav class="drawer-nav newHeader__drawer" role="navigation" >
 			<div class="newHeader__drawer--inner">
 				<!-- メニューの読み込み -->
 				<?php wp_nav_menu( array(

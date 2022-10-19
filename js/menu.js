@@ -146,19 +146,19 @@ jQuery(function ($) {
 			let href = $(this).attr("href");
 			let target = $(href == "#" || href == "" ? 'html' : href);
 			let position = target.offset().top;
-			let positionPlus = position - 130;
 			let speed = 300;
 
-			console.log(positionPlus);
+			console.log(position);
 			$("html, body").animate({
-				scrollTop: positionPlus
+				scrollTop: position
 			}, speed, "swing");
 			return false;
 		});
 	}
 
 	anchorScroll();
-
+	let position = $('#header').offset().top;
+	console.log(position);
 
 	//コメント部分	
 	jQuery(function ($) {

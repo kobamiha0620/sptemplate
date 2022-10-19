@@ -58,7 +58,7 @@
 			<div class="footcont__btm--copywrap">
 				<p class="footcont__btm--copy">@ TWIN PLANET Co., Ltd.</p>
 			</div>
-			<a href="#header" class="footcont__btm--linkTop" id="js-top">
+			<a href="#navigation" class="footcont__btm--linkTop" id="js-top">
 				<!-- <span class="arrow"></span> -->
 			</a>
 		</div>

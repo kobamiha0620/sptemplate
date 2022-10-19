@@ -150,17 +150,6 @@
 
 
 
-  <!-- EDITOR'S PICK ------------------------------------------------->
-<!-- 
-  <div class="single__epick">
-  <?php
-    
-    #get_template_part('/template_parts/epick'); ?>
-  </div> -->
-
-  <!-- EDITOR'S PICK ------------------------------------------------->
-
-
 
       </div><!-- /.single__contents -->
     </div><!-- /#single -->
@@ -179,7 +168,7 @@
           <span class="articles__ttl--en">NEW ARRIVAL</span>
           <span class="articles__ttl--jp">最新記事</span>
         </h2>
-        <ul class="articles__list">
+        <ul class="varticle">
           <?php
                 //$argsのプロパティを変えていく
                 $args = array(
@@ -193,7 +182,7 @@
                 $the_query = new WP_Query($args);
                 if ($the_query->have_posts()) :
                   while ($the_query->have_posts()) : $the_query->the_post();
-                    get_template_part('template_parts/newestArticle');
+                    get_template_part('template_parts/newestArticleVertical');
 
                   endwhile;
                 endif;
@@ -212,9 +201,6 @@
 <!--end contents-->
 
 
-
-
-<div class="pc"><?php get_sidebar(); ?></div>
 
 </div>
 <!--end container-->

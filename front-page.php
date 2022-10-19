@@ -13,7 +13,7 @@
       <?php 
 
         //１件目毎月変更するよー
-        $postId01 = 8449;
+        $postId01 = 8718;
         $user_id01 = get_post_field( 'post_author', $postId01 );
         $post_date01 = get_the_date( 'Y.m.d', $postId01 );
 

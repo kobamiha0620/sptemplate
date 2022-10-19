@@ -1,6 +1,6 @@
 <div class="articlesWrapper" id="latestAll">
 <h2 class="articles__ttl">
-    <span class="articles__ttl--en">POPULAR TAGS</span></span>
+    <span class="articles__ttl--en">POPULAR TAGS</span>
     <span class="articles__ttl--jp">人気のタグ記事</span>
 </h2>
 
