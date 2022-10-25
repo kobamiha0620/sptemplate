@@ -1,10 +1,15 @@
+
 <?php get_header(); ?>
 
 <div class="container">
 
   <!-- TOPのみ -->
   <section class="slideTop">
+    <div style="font-size: 20px;" id="herourl">
+    <?php $urlherobnr = get_field('herourl'); ?>
+    <?php $postidHero = url_to_postid( $urlherobnr ); ?>
 
+    </div>
     <!-- トップページにだけ表示 -->
     <div class="slide">
       <ul class="slick">
@@ -13,7 +18,7 @@
       <?php 
 
         //１件目毎月変更するよー
-        $postId01 = 8718;
+        $postId01 = $postidHero;
         $user_id01 = get_post_field( 'post_author', $postId01 );
         $post_date01 = get_the_date( 'Y.m.d', $postId01 );
 
@@ -324,3 +329,12 @@
 
 
 <?php get_footer(); ?>
+
+
+
+<?php
+/*
+Template Name: Hometemplate
+Template Post Type: post,page,works
+*/
+?>
