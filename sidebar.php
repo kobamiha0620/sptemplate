@@ -9,7 +9,7 @@
   <div class="sidebar-inner">
 
     <!-- KEYWORD -->
-    <?php get_template_part('template_parts/keyword'); ?>
+    <!-- <#?php get_template_part('template_parts/keyword'); ?> -->
 
     <!-- ランキング記事 -->
     <?php get_template_part('template_parts/ranking'); ?>
@@ -21,7 +21,7 @@
     <?php get_template_part('template_parts/bnrs'); ?>
 
     <!-- HOT TAG -->
-    <?php get_template_part('template_parts/hottag'); ?>
+  <!-- <#?php get_template_part('template_parts/hottag'); ?> -->
     
     <!-- INSTAGRAM -->
     <!-- /* get_template_part('template_parts/insta'); */ -->

@@ -29,12 +29,12 @@
     </div><!-- /#page -->
 
         <!-- KEYWORD -->
-        <?php get_template_part('template_parts/keyword'); ?>
+        <!-- <#?php get_template_part('template_parts/keyword'); ?> -->
         <!-- ランキング記事 -->
         <?php get_template_part('template_parts/ranking'); ?>
         <!-- HOT TAG -->
-        <?php get_template_part('template_parts/hottag'); ?>
-        <?php get_template_part('template_parts/bnrs'); ?>
+  <!-- <#?php get_template_part('template_parts/hottag'); ?> -->
+  <?php get_template_part('template_parts/bnrs'); ?>
 
         <!-- SERIES -->
         <?php get_template_part('template_parts/series'); ?>

@@ -42,15 +42,14 @@
                 <div class="slide__txtwrap">
 
                   <div class="slide__cate">
-                  <?php if (has_category()): ?>
-                  <?php $postcat = get_the_category($postId01); for($i = 0; count($postcat) > $i; $i++){
-                      $postName = $postcat[$i]->name;
-                      $postId = $postcat[$i]->slug;
-                  ?>
-                  <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
 
-                <?php } ?>
-                <?php endif; ?>
+                    <?php $postcat = get_the_category($postId01); for($i = 0; count($postcat) > $i; $i++){
+                        $postName = $postcat[$i]->name;
+                        $postId = $postcat[$i]->slug;
+                    ?>
+                    <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
+
+                  <?php } ?>
 
                   </div><!-- slide__cate -->
 
@@ -276,11 +275,11 @@
   <!-- EDITOR'S PICK ------------------------------------------------->
 
   <!-- KEYWORD -->
-  <?php get_template_part('template_parts/keyword'); ?>
+  <!-- <#?php get_template_part('template_parts/keyword'); ?> -->
   <!-- ランキング記事 -->
   <?php get_template_part('template_parts/ranking'); ?>
   <!-- HOT TAG -->
-  <?php get_template_part('template_parts/hottag'); ?>
+  <!-- <#?php get_template_part('template_parts/hottag'); ?> -->
   <!-- バナー設定 -->
   <?php get_template_part('template_parts/bnrs'); ?>
   <!-- SERIES -->

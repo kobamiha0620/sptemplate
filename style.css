@@ -148,6 +148,9 @@ li {
 .cat-data.cate-assistant {
   background-color: #5297D5;
 }
+.cat-data.cate-yummy {
+  background-color: #5297D5;
+}
 .cat-data.cate-serial {
   background-color: #5297D5;
 }
@@ -941,6 +944,274 @@ div#toc_container .toc_list ul li a::before {
     margin: 6.66vw 0 4.2vw;
   }
 }
+.checktrue input,
+.checktrue button,
+.checktrue select,
+.checktrue textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+.checktrue textarea {
+  resize: vertical;
+}
+.checktrue input[type=checkbox],
+.checktrue input[type=radio] {
+  display: none;
+}
+.checktrue input[type=submit],
+.checktrue input[type=button],
+.checktrue label,
+.checktrue button,
+.checktrue select {
+  cursor: pointer;
+}
+.checktrue select::-ms-expand {
+  display: none;
+}
+.checktrue__true {
+  border: solid 2px #4051AD;
+  padding: 20px;
+  background: #FFF;
+  width: 49%;
+  border-radius: 5px;
+  text-align: center;
+  color: #4051AD;
+  font-weight: bold;
+  font-size: 18px;
+}
+.checktrue__true:hover {
+  background: #DADFF5;
+}
+@media screen and (max-width: 980px) {
+  .checktrue__true {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
+.checktrue__false {
+  border: solid 2px #D92020;
+  padding: 20px;
+  background: #FFF;
+  width: 49%;
+  border-radius: 5px;
+  text-align: center;
+  color: #D92020;
+  font-weight: bold;
+  font-size: 18px;
+}
+.checktrue__false:hover {
+  background: #FAE2E2;
+}
+@media screen and (max-width: 980px) {
+  .checktrue__false {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
+.checktrue__contents {
+  padding: 0;
+}
+@media screen and (max-width: 980px) {
+  .checktrue__contents {
+    padding: 0 5%;
+  }
+}
+.checktrue__fv img {
+  width: 100%;
+}
+.checktrue__txt {
+  text-align: center;
+  margin: 5% 0 0;
+  line-height: 1.6;
+  font-size: 18px;
+  font-weight: normal;
+}
+@media screen and (max-width: 980px) {
+  .checktrue__txt {
+    font-size: 15px;
+  }
+}
+.checktrue__notice {
+  line-height: 1.5;
+  margin: 6px 0 0;
+  color: #D92020;
+  font-weight: bold;
+  display: none;
+}
+.checktrue__inputs {
+  margin: 100px 0 0;
+}
+.checktrue__inputs--quest {
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+@media screen and (max-width: 980px) {
+  .checktrue__inputs--quest {
+    font-size: 16px;
+  }
+}
+.checktrue__inputs--list li {
+  margin-bottom: 5%;
+}
+.checktrue__inputs--list li .checktrue__inputs--btns input:checked + label.checktrue__true {
+  background: #DADFF5;
+}
+.checktrue__inputs--list li .checktrue__inputs--btns input:checked + label.checktrue__false {
+  background: #FAE2E2;
+}
+.checktrue__inputs--list li.error {
+  padding: 20px;
+  background: #FDFCD0;
+}
+.checktrue__inputs--list li.error .checktrue__notice {
+  display: block;
+}
+.checktrue__inputs--btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.checktrue__submit {
+  color: #FFF;
+  background: #F08E09;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 28px 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.checktrue__submit--wrapper {
+  text-align: center;
+  margin: 80px 0 0;
+}
+.checktrue__submit.disable {
+  background: #ddd;
+}
+
+#sumit__alert {
+  color: #D92020;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  margin-top: 10px;
+}
+#sumit__alert.active {
+  display: block;
+}
+
+.resultcheck__fv {
+  background: #f3e7f4;
+  padding: 100px 0;
+  margin: 0 auto 30px;
+}
+.resultcheck__ttl {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto 10px;
+  letter-spacing: 0.1em;
+}
+.resultcheck__subttl {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+@media screen and (max-width: 980px) {
+  .resultcheck__answers {
+    padding: 0 5%;
+  }
+}
+.resultcheck__answers--ttl {
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 0 auto 40px;
+  background: #F7F7F7;
+  font-weight: normal;
+}
+.resultcheck__answers--lists li {
+  margin: 0 auto 20px;
+}
+.resultcheck__answers--faqtrue {
+  display: flex;
+  align-items: center;
+  color: #D92020;
+  padding: 10px 0;
+}
+.resultcheck__answers--faqtrue br {
+  display: none;
+}
+.resultcheck__answers--faqtrue .resultcheck__answers--result {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #D92020;
+  border-radius: 3px;
+  border: solid 2px #D92020;
+  color: #FFF;
+  margin: 0 8px 0 0;
+  font-size: 14px;
+}
+@media screen and (max-width: 980px) {
+  .resultcheck__answers--faqtrue {
+    display: block;
+  }
+  .resultcheck__answers--faqtrue br {
+    display: block;
+  }
+  .resultcheck__answers--faqtrue .resultcheck__answers--result {
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.resultcheck__answers--faqfalse {
+  display: flex;
+  align-items: center;
+  color: #4051AD;
+  padding: 10px 0;
+}
+.resultcheck__answers--faqfalse br {
+  display: none;
+}
+.resultcheck__answers--faqfalse .resultcheck__answers--result {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #4051AD;
+  color: #FFF;
+  border-radius: 3px;
+  border: solid 2px #4051AD;
+  margin: 0 8px 0 0;
+  font-size: 14px;
+}
+@media screen and (max-width: 980px) {
+  .resultcheck__answers--faqfalse {
+    display: block;
+  }
+  .resultcheck__answers--faqfalse br {
+    display: block;
+  }
+  .resultcheck__answers--faqfalse .resultcheck__answers--result {
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.resultcheck__answers--setusmei {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+}
+
 #search .search__ttl {
   font-size: 24px;
   font-weight: normal;
@@ -6746,7 +7017,7 @@ body.home .container__wrapper {
 }
 
 .slide__white {
-  bottom: 0;
+  bottom: -1px;
   top: auto;
   background-position: 0 bottom;
 }
@@ -7190,4 +7461,14 @@ body.home .container__wrapper {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.wp-embed-footer {
+  display: none !important;
+}
+
+.wp-embed-heading a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

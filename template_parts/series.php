@@ -5,7 +5,29 @@
     </h2>
 
         <div class="side__series--inner">
+        <!--------------------
+    　　 ----------------------
+        やみちゃん
+        ----------------------
+        -------------------->
+        <div class="side__series--blc">
+        <a href="/category/yummy/" class="side__series--link">
+                <!--画像を追加-->
+                <div class="side__series--img">
+                    <img src="https://femtech.tv/wp-content/uploads/2022/10/femtec_release22.jpg" alt="">
+                </div>
 
+                <div class="side__series--r">
+                    <!-- カテゴリslug名からカテゴリ情報の取得 -->
+
+                    <span class="cat-data cate-yummy">やみちゃん保健室</span>
+                    <p class="side__series--excerpt">やみちゃんが、女性のカラダやココロにまつわる様々な疑問にお答えします。</p>
+
+                </div>
+            </a>
+            <p class="side__series--catelink"><a href="/category/yummy/">view All</a></p>
+            
+        </div><!--  /.side__series--blc -->
         <!--------------------
     　　 ----------------------
         青木さんの記事

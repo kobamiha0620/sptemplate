@@ -148,6 +148,9 @@ li {
 .cat-data.cate-assistant {
   background-color: #5297D5;
 }
+.cat-data.cate-yummy {
+  background-color: #5297D5;
+}
 .cat-data.cate-serial {
   background-color: #5297D5;
 }
@@ -420,7 +423,7 @@ li {
 }
 
 #js-newest {
-  padding-top: 46px;
+  padding-top: 106px;
 }
 
 @media screen and (max-width: 980px) {
@@ -566,7 +569,7 @@ li {
   }
 
   #js-newest {
-    padding-top: 40px;
+    padding-top: 13vw;
   }
 
   .sidebar__bnrs {

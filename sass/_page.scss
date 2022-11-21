@@ -788,3 +788,287 @@ div#toc_container {
     margin: 6.66vw 0 4.2vw;
   }
 }
+
+//うそほんと。
+.checktrue{
+  input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+  &__true{
+    border: solid 2px #4051AD;
+    padding: 20px;
+    background: #FFF;
+    width: 49%;
+    border-radius: 5px;
+    text-align: center;
+    color: #4051AD;
+    font-weight: bold;
+    font-size: 18px;
+    &:hover{
+      background: #DADFF5;
+    }
+    @media screen and (max-width: $BP) {
+      padding: 10px 0; 
+      font-size: 15px;
+
+    }
+  }
+  &__false{
+    border: solid 2px #D92020;
+    padding: 20px;
+    background: #FFF;
+    width: 49%;
+    border-radius: 5px;
+    text-align: center;
+    color: #D92020;
+    font-weight: bold;
+    font-size: 18px;
+    &:hover{
+      background: #FAE2E2;
+    }
+    @media screen and (max-width: $BP) {
+      padding: 10px 0; 
+      font-size: 15px;
+    }
+  }
+
+  &__contents{
+    padding: 0;
+    @media screen and (max-width: $BP) {
+
+      padding: 0 5%;
+    }
+  }
+  &__fv{
+    img{
+      width: 100%;
+    }
+  }
+  &__txt{
+    text-align: center;
+    margin: 5% 0 0;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: normal;
+    @media screen and (max-width: $BP) {
+      font-size: 15px;
+    }
+  }
+  &__notice{
+    line-height: 1.5;
+    margin: 6px 0 0;
+    color: #D92020;
+    font-weight: bold;
+    display: none;
+  }
+  &__inputs{
+    margin: 100px 0 0;
+    &--quest{
+      font-size: 18px;
+      line-height: 1.2;
+      margin: 0 0 6px;
+      @media screen and (max-width: $BP) {
+        font-size: 16px;
+      }
+    }
+    &--list{
+      li{
+        margin-bottom: 5%;
+        .checktrue__inputs--btns input:checked + label.checktrue__true{
+          background: #DADFF5;
+    
+        }
+        .checktrue__inputs--btns input:checked + label.checktrue__false{
+          background: #FAE2E2;
+        }
+
+        &.error{
+          padding: 20px;
+          background: #FDFCD0;
+          .checktrue__notice{
+            display: block;
+          }
+        }
+      }
+    }
+
+    &--btns{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__submit{
+    color: #FFF;
+    background: #F08E09;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 28px 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    &--wrapper{
+      text-align: center;
+      margin: 80px 0 0;
+    }
+    &.disable{
+      background: #ddd;
+    }
+  }
+  
+}
+
+#sumit__alert{
+  color: #D92020; 
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  margin-top: 10px;
+  &.active{
+    display: block;
+  }
+}
+
+
+//診断ページ　結果
+.resultcheck{
+  &__fv{
+
+    background: rgb(243,231,244);
+    padding: 100px 0 ;
+    margin: 0 auto 30px;
+  }
+  &__ttl{
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto 10px;
+    letter-spacing: 0.1em;
+  }
+  &__subttl{
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  &__answers{
+    @media screen and (max-width: $BP) {
+
+      padding: 0 5%;
+    }
+    &--ttl{
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 5px;
+      margin: 0 auto 40px;
+
+      background: #F7F7F7;
+      font-weight: normal;
+    }
+    &--lists{
+      li{
+        margin: 0 auto 20px;
+      }
+    }
+    &--faqtrue{
+      display: flex;
+      align-items: center;
+      color: #D92020;
+      padding: 10px 0;
+      br{
+        display: none;
+      }
+
+      .resultcheck__answers--result{
+        display: inline-block;
+        padding: 3px 8px;
+        background: #D92020;
+        border-radius: 3px;
+        border: solid 2px #D92020;
+        color: #FFF;
+        margin: 0 8px 0 0;
+        font-size: 14px;
+      }
+      @media screen and (max-width: $BP) {
+        display: block;
+        br{
+          display: block;
+        }
+        .resultcheck__answers--result{
+          margin-bottom: 8px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+    &--faqfalse{
+      display: flex;
+      align-items: center;
+      color: #4051AD;
+      padding: 10px 0;
+      br{
+        display: none;
+      }
+
+      .resultcheck__answers--result{
+        display: inline-block;
+        padding: 3px 8px;
+        background: #4051AD;
+        color: #FFF;
+        border-radius: 3px;
+        border: solid 2px #4051AD;
+        margin: 0 8px 0 0;
+        font-size: 14px;
+      }
+      @media screen and (max-width: $BP) {
+        display: block;
+        br{
+          display: block;
+        }
+        .resultcheck__answers--result{
+          margin-bottom: 8px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+    &--setusmei{
+      font-size: 14px;
+      line-height: 1.8;
+      color: #666;
+    }
+  }
+}

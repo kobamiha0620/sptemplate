@@ -567,3 +567,16 @@ button[type="submit"]{
 
 //sp一体化
   @import "sphone2022";
+
+//記事リンクの修正
+.wp-embed-footer{
+  display: none!important;
+}
+.wp-embed-heading{
+  a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  
+  }
+}
