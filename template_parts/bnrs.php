@@ -2,6 +2,9 @@
 
 
 <div class="side__bnrs">
+    <a href="https://biyoshinkyu.net/yuragi/" target="_blank" rel="noopener noreferrer">
+        <img src="https://femtech.tv/wp-content/uploads/2022/11/banner_yuragi.jpg" alt="yuragi　鍼灸院" width="100%">
+    </a>
     <?php query_posts('category_name=horoscope&posts_per_page=1');?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

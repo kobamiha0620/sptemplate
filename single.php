@@ -274,6 +274,7 @@
   </div>
   <!--end index__inner-->
 
+  <?php get_template_part('template_parts/bnrs'); ?>
 
 </div>
 <!--end contents-->

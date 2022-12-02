@@ -124,6 +124,10 @@
   <div id="cateRanking"></div>
   <?php get_template_part('template_parts/ranking'); ?>
 
+  <?php get_template_part('template_parts/bnrs'); ?>
+
+
+
   <div class="index__inner">
     <!-- SP用padding Blc -->
     <section class="catephp__anchor">

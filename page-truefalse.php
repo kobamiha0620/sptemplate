@@ -1,4 +1,3 @@
-
 <?php
 /*
  * Template Name: 診断テスト
@@ -11,7 +10,8 @@
 
 <div class="checktrue" id="checktrue">
     <section class="checktrue__fv">
-        <img src="https://placehold.jp/1000x650.png" alt="テスト">
+        <?php the_post_thumbnail(); ?>
+
     </section>
     <div class="checktrue__contents">
         <h2 class="checktrue__txt">
@@ -246,9 +246,9 @@
                 </ul>
 
                 <p class="checktrue__submit--wrapper">
-                <a class="checktrue__submit" id="submitBtn">
-                    チェックする
-                </a>
+                    <a class="checktrue__submit" id="submitBtn">
+                        チェックする
+                    </a>
                 </p>
                 <p id="sumit__alert">全て選択してください。</p>
 
@@ -266,48 +266,79 @@
     </div><!-- /.page__contents -->
 </div><!-- /#page -->
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/checktrue.js" type="text/javaScript" charset="utf-8"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/checktrue.js" type="text/javaScript" charset="utf-8">
+</script>
 
 <?php elseif(is_page('truefalse-result1')): /* 診断ページTOP */ ?>
     <section class="resultcheck__fv">
     <p class="resultcheck__ttl">満点です</p>
-    <p class="resultcheck__subttl">Beautiful!</p>
-    </section>
-    <?php  get_template_part('template_parts/truefalse/result1');?>
+    <p class="resultcheck__subttl">Perfect!</p>
+</section>
+    <section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+
+</section>
+
+<?php  get_template_part('template_parts/truefalse/result1');?>
 
 <?php elseif(is_page('truefalse-result2')): /* 診断ページTOP */ ?>
-<section class="resultcheck__fv">
-<p class="resultcheck__ttl">高得点(15〜18点)</p>
-<p class="resultcheck__subttl">Fantastics!</p>
+    <section class="resultcheck__fv">
+    <p class="resultcheck__ttl">高得点(15〜18点)</p>
+    <p class="resultcheck__subttl">Fantastics!</p>
 </section>
+    <section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+
+</section>
+
 <?php  get_template_part('template_parts/truefalse/result1');?>
 
+
 <?php elseif(is_page('truefalse-result3')): /* 診断ページTOP */ ?>
-<section class="resultcheck__fv">
-<p class="resultcheck__ttl">高得点(11〜14点)</p>
-<p class="resultcheck__subttl">Very Good!</p>
+    <section class="resultcheck__fv">
+    <p class="resultcheck__ttl">高得点(11〜14点)</p>
+    <p class="resultcheck__subttl">Well done!</p>
 </section>
+<section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+
+</section>
+
 <?php  get_template_part('template_parts/truefalse/result1');?>
+<section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+
+</section>
 
 <?php elseif(is_page('truefalse-result4')): /* 診断ページTOP */ ?>
 <section class="resultcheck__fv">
-<p class="resultcheck__ttl">まぁまぁ(6〜10点)</p>
-<p class="resultcheck__subttl">Good!</p>
+    <p class="resultcheck__ttl">まぁまぁ(6〜10点)</p>
+    <p class="resultcheck__subttl">Good!</p>
 </section>
+<section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+
+</section>
+
 <?php  get_template_part('template_parts/truefalse/result1');?>
 
 <?php elseif(is_page('truefalse-result5')): /* 診断ページTOP */ ?>
 <section class="resultcheck__fv">
-<p class="resultcheck__ttl">もう少し(0〜4点)</p>
-<p class="resultcheck__subttl">welldone!</p>
+    <p class="resultcheck__ttl">もう少し(0〜4点)</p>
+    <p class="resultcheck__subttl">Try hard!</p>
 </section>
+<section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+
+</section>
+
 <?php  get_template_part('template_parts/truefalse/result1');?>
 
 
 <?php endif; ?>
 
 <style>
-    .container__wrapper{
+    .container__wrapper {
         padding-top: 0;
     }
 </style>
