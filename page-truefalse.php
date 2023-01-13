@@ -11,12 +11,18 @@
 <div class="checktrue" id="checktrue">
     <section class="checktrue__fv">
         <?php the_post_thumbnail(); ?>
-
-    </section>
-    <div class="checktrue__contents">
+        <div class="checktrue__fv--inner">
         <h2 class="checktrue__txt">
+            <span>
+            女性のカラダのウソ・ホント 健康、生理、SEX…にまつわるetc.<br>〈医師監修〉<br>
+            </span>
             カラダについて、わかっているつもりでもわかっていないことって意外と多く、常識だと思って信じていたことが、実は間違っていた！　なんてこともよくあるもの。女性のカラダのウソ・ホントを、19の質問に答えて理解度をチェックしてみましょう！
         </h2>
+        </div>
+    </section>
+
+    <div class="checktrue__contents">
+
 
 
         <div class="checktrue__inputs">
@@ -270,67 +276,62 @@
 </script>
 
 <?php elseif(is_page('truefalse-result1')): /* 診断ページTOP */ ?>
-    <section class="resultcheck__fv">
+<section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+    <div class="resultcheck__fv--inner">
     <p class="resultcheck__ttl">満点です</p>
     <p class="resultcheck__subttl">Perfect!</p>
-</section>
-    <section class="checktrue__fv">
-    <?php the_post_thumbnail(); ?>
-
+    </div>
 </section>
 
 <?php  get_template_part('template_parts/truefalse/result1');?>
 
 <?php elseif(is_page('truefalse-result2')): /* 診断ページTOP */ ?>
-    <section class="resultcheck__fv">
-    <p class="resultcheck__ttl">高得点(15〜18点)</p>
-    <p class="resultcheck__subttl">Fantastics!</p>
-</section>
-    <section class="checktrue__fv">
-    <?php the_post_thumbnail(); ?>
 
+<section class="checktrue__fv">
+    <?php the_post_thumbnail(); ?>
+    <div class="resultcheck__fv--inner">
+        <p class="resultcheck__ttl">高得点(15〜18点)</p>
+        <p class="resultcheck__subttl">Fantastics!</p>
+    </div>
 </section>
 
 <?php  get_template_part('template_parts/truefalse/result1');?>
 
 
 <?php elseif(is_page('truefalse-result3')): /* 診断ページTOP */ ?>
-    <section class="resultcheck__fv">
-    <p class="resultcheck__ttl">高得点(11〜14点)</p>
-    <p class="resultcheck__subttl">Well done!</p>
-</section>
+
 <section class="checktrue__fv">
     <?php the_post_thumbnail(); ?>
-
+    <div class="resultcheck__fv--inner">
+    <p class="resultcheck__ttl">高得点(11〜14点)</p>
+    <p class="resultcheck__subttl">Well done!</p>
+    </div>
 </section>
 
 <?php  get_template_part('template_parts/truefalse/result1');?>
-<section class="checktrue__fv">
-    <?php the_post_thumbnail(); ?>
 
-</section>
 
 <?php elseif(is_page('truefalse-result4')): /* 診断ページTOP */ ?>
-<section class="resultcheck__fv">
-    <p class="resultcheck__ttl">まぁまぁ(6〜10点)</p>
-    <p class="resultcheck__subttl">Good!</p>
-</section>
 <section class="checktrue__fv">
     <?php the_post_thumbnail(); ?>
-
+    <div class="resultcheck__fv--inner">
+    <p class="resultcheck__ttl">まぁまぁ(6〜10点)</p>
+    <p class="resultcheck__subttl">Good!</p>
+    </div>
 </section>
 
 <?php  get_template_part('template_parts/truefalse/result1');?>
 
 <?php elseif(is_page('truefalse-result5')): /* 診断ページTOP */ ?>
-<section class="resultcheck__fv">
-    <p class="resultcheck__ttl">もう少し(0〜4点)</p>
-    <p class="resultcheck__subttl">Try hard!</p>
-</section>
 <section class="checktrue__fv">
     <?php the_post_thumbnail(); ?>
-
+    <div class="resultcheck__fv--inner">
+    <p class="resultcheck__ttl">もう少し(0〜4点)</p>
+    <p class="resultcheck__subttl">Try hard!</p>
+    </div>
 </section>
+
 
 <?php  get_template_part('template_parts/truefalse/result1');?>
 

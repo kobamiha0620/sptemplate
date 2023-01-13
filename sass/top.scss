@@ -180,7 +180,7 @@
 }
 
 #js-newest{
-    padding-top: 106px;
+    padding-top: 8%;
 }
 
 @media screen and (max-width: $BP) {
@@ -340,7 +340,7 @@
         }
     }
     #js-newest{
-        padding-top: 13vw;
+        padding-top: 8vw;
     }
     .sidebar__bnrs{
         text-decoration: none;
@@ -350,3 +350,7 @@
     }
 }
 
+//スライドの変更
+.slick-dotted.slick-slider{
+    margin-bottom: clamp(10vw, 20vw, 100px);
+}

@@ -423,7 +423,7 @@ li {
 }
 
 #js-newest {
-  padding-top: 106px;
+  padding-top: 8%;
 }
 
 @media screen and (max-width: 980px) {
@@ -569,7 +569,7 @@ li {
   }
 
   #js-newest {
-    padding-top: 13vw;
+    padding-top: 8vw;
   }
 
   .sidebar__bnrs {
@@ -578,4 +578,7 @@ li {
     margin: 25vw 0 11.4vw;
     overflow: hidden;
   }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: clamp(10vw, 20vw, 100px);
 }

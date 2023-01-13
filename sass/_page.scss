@@ -962,27 +962,59 @@ select::-ms-expand {
     display: block;
   }
 }
-
+.checktrue__fv{
+  position: relative;
+  &--inner{
+    position: absolute;
+    display: inline-block;
+    background: rgb(255,255,255, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    padding: 50px 30px;
+    width: 90%;
+  }
+}
 
 //診断ページ　結果
 .resultcheck{
   &__fv{
-
+    position: relative;
     background: rgb(243,231,244);
     padding: 30px 0 28px;
     margin: 0 auto;
+    width: 100%;
+    
+    img{
+      width: 100%;
+      height: auto;
+    }
+    &--inner{
+      position: absolute;
+      display: inline-block;
+      background: rgb(255,255,255, 0.7);
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      margin: auto;
+      padding: 50px;
+    }
   }
   &__ttl{
     font-weight: bold;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     margin: 0 auto 10px;
     letter-spacing: 0.1em;
   }
   &__subttl{
     text-align: center;
-    font-size: 16px;
-    color: #262626;
+    font-size: 22px;
+    @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');    font-family: 'Klee One', cursive;
+    font-family: 'Klee One', cursive;
+
+    color: #F46772;
   }
   &__answers{
     @media screen and (max-width: $BP) {
@@ -1081,3 +1113,24 @@ select::-ms-expand {
     height: auto;
   }
 }
+.checktrue__txt{
+  font-size: 14px;
+  margin-top: 0;
+  text-align: center;
+  span{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: $BP) {
+  .resultcheck__ttl{
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  .resultcheck__fv--inner{
+    padding: 30px;
+  }
+}
+

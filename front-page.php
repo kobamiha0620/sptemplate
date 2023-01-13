@@ -3,11 +3,14 @@
 
 <div class="container">
 
-  <!-- TOPのみ -->
-  <section class="slideTop">
+
+    <!-- TOPのみ -->
+    <section class="slideTop">
     <div style="font-size: 20px;" id="herourl">
-    <?php $urlherobnr = get_field('herourl'); ?>
-    <?php $postidHero = url_to_postid( $urlherobnr ); ?>
+    <?php
+     $urlherobnr = get_field('herourl'); 
+     $postidHero = url_to_postid( $urlherobnr );   
+      ?>
 
     </div>
     <!-- トップページにだけ表示 -->
@@ -22,215 +25,167 @@
         $user_id01 = get_post_field( 'post_author', $postId01 );
         $post_date01 = get_the_date( 'Y.m.d', $postId01 );
 
-        //１件目毎月変更するよー
-        $postId02 = 4067;
-        $user_id02 = get_post_field( 'post_author', $postId02 );
-        $post_date02 = get_the_date( 'Y.m.d', $postId02 );
       ?>
 
+
       <li>
-      <a href="https://biyoshinkyu.net/yuragi/" target="_blank" rel="noopener noreferrer" class="slide__wrap--link">
-      <div class="slide__img">
-
-        <img src="https://femtech.tv/wp-content/uploads/2022/11/femtec_yuragi.jpg" alt="yuragi　鍼灸院" width="100%">
-        </div><!--  slide__img -->
-
-    </a>
+        <a href="https://biyoshinkyu.net/yuragi/" target="_blank" rel="noopener noreferrer" class="slide__wrap--link">
+          <div class="slide__img">
+            <img src="https://femtech.tv/wp-content/uploads/2022/11/femtec_yuragi.jpg" alt="yuragi　鍼灸院" width="100%">
+          </div><!--  slide__img -->
+        </a>
       </li>
-      <li>
-          <div class="slide__wrap">
-            <a href="<?php echo get_permalink($postId01); ?>" class="slide__wrap--link">
-              <!--画像を追加-->
-              <div class="slide__img">
-               <?php echo get_the_post_thumbnail( $postId01 ) ?>
-
-              </div><!--  slide__img -->
-
-              <!--whiteを追加-->
-              <div class="slide__white"></div>
-
-              <div class="slide__txtblc">
-                <div class="slide__txtwrap">
-
-                  <div class="slide__cate">
-
-                    <?php $postcat = get_the_category($postId01); for($i = 0; count($postcat) > $i; $i++){
-                        $postName = $postcat[$i]->name;
-                        $postId = $postcat[$i]->slug;
-                    ?>
-                    <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
-
-                  <?php } ?>
-
-                  </div><!-- slide__cate -->
-
-                  <!--投稿日を表示-->
-                  <span class="cate__date">
-                    <time datetime="<?php echo $post_date01; ?>">
-                      <?php echo $post_date01; ?>
-                    </time>
-                  </span>
-
-                  <!--著者を表示-->
-                  <span class="cate__author">by <?php echo get_the_author_meta( 'display_name', $user_id01 ); ?></span>
-
-                </div>
-
-                <p class="slide__excerpt"><?php echo get_the_title( $postId01 ); ?></p>
-              </div>
-            </a>
-          </div>
-        </li>
-
 
       <li>
-          <div class="slide__wrap">
-            <a href="<?php echo get_permalink($postId02); ?>" class="slide__wrap--link">
-              <!--画像を追加-->
-              <div class="slide__img">
-               <?php echo get_the_post_thumbnail( $postId02 ) ?>
+        <div class="slide__wrap">
+          <a href="<?php echo get_permalink($postId01); ?>" class="slide__wrap--link">
+            <!--画像を追加-->
+            <div class="slide__img">
+              <?php echo get_the_post_thumbnail( $postId01 ) ?>
 
-              </div><!--  slide__img -->
+            </div><!--  slide__img -->
 
-              <!--whiteを追加-->
-              <div class="slide__white"></div>
+            <!--whiteを追加-->
+            <div class="slide__white"></div>
 
-              <div class="slide__txtblc">
-                <div class="slide__txtwrap">
+            <div class="slide__txtblc">
+              <div class="slide__txtwrap">
 
-                  <div class="slide__cate">
+                <div class="slide__cate">
 
-                    <?php $postcat = get_the_category($postId02); for($i = 0; count($postcat) > $i; $i++){
-                        $postName = $postcat[$i]->name;
-                        $postId = $postcat[$i]->slug;
-                    ?>
-                    <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
+                  <?php $postcat = get_the_category($postId01); for($i = 0; count($postcat) > $i; $i++){
+                      $postName = $postcat[$i]->name;
+                      $postId = $postcat[$i]->slug;
+                  ?>
+                  <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
 
-                  <?php } ?>
+                <?php } ?>
 
-                  </div><!-- slide__cate -->
+                </div><!-- slide__cate -->
 
-                  <!--投稿日を表示-->
-                  <span class="cate__date">
-                    <time datetime="<?php echo $post_date02; ?>">
-                      <?php echo $post_date02; ?>
-                    </time>
-                  </span>
+                <!--投稿日を表示-->
+                <span class="cate__date">
+                  <time datetime="<?php echo $post_date01; ?>">
+                    <?php echo $post_date01; ?>
+                  </time>
+                </span>
 
-                  <!--著者を表示-->
-                  <span class="cate__author">by <?php echo get_the_author_meta( 'display_name', $user_id02 ); ?></span>
+                <!--著者を表示-->
+                <span class="cate__author">by <?php echo get_the_author_meta( 'display_name', $user_id01 ); ?></span>
 
-                </div>
-
-                <p class="slide__excerpt"><?php echo get_the_title( $postId02 ); ?></p>
               </div>
-            </a>
-          </div>
-        </li>
+
+              <p class="slide__excerpt"><?php echo get_the_title( $postId01 ); ?></p>
+            </div>
+          </a>
+        </div>
+      </li>
 
 
-            <!-- ③固定ページ -->
-            <li>
-          <div class="slide__wrap">
-            <a href="/consultation/" class="slide__wrap--link">
-              <!--画像を追加-->
-              <div class="slide__img">
-               <img src="https://femtech.tv/wp-content/uploads/2022/07/test.png" alt="">
-
-              </div><!--  slide__img -->
-
-              <!--whiteを追加-->
-              <div class="slide__white"></div>
-
-              <div class="slide__txtblc">
-                <div class="slide__txtwrap">
-
-                  <div class="slide__cate">
-
-                  <p class="cat-data cate-beauty">お悩み募集</p>
-                  </div><!-- slide__cate -->
-                </div>
-
-                <p class="slide__excerpt">あなたが日頃感じているお悩みを教えてください</p>
-              </div>
-            </a>
-          </div>
-        </li>
 
 
         <?php
-     $duration = date('Y-m-d', strtotime('-32days'));
-      $args = array(
-        'post_type' => 'post', // 投稿タイプ
-        'post_status' => 'publish', //公開済みのページのみ取得
-        'orderby' => 'rand', // 表示順の基準
-        'posts_per_page' => 2, // 表示件数の指定
-        'cat' => '-278, -430, -431', //EditorsPick・星占いを除外
-        'post__not_in' => array($postId01), //除外したい投稿のID
-        'date_query' => array(
-          'after' => $duration,
-          'inclusive' => true //afterとbeforeに指定した日を含めるかどうか
-       )
-  
-      );
-		$posts = get_posts( $args );
-		foreach ( $posts as $post ): // ループの開始
-		setup_postdata( $post ); // 記事データの取得
-		?>
+        $urlherobnr2 = get_field('herourl2');
+        $postId02 = url_to_postid( $urlherobnr2 );
+        $user_id02 = get_post_field( 'post_author', $postId02 );
+        $post_date02 = get_the_date( 'Y.m.d', $postId02 );
+        ?>
+      <li>
+        <div class="slide__wrap">
+          <a href="<?php echo get_permalink($postId02); ?>" class="slide__wrap--link">
+            <!--画像を追加-->
+            <div class="slide__img">
+              <?php echo get_the_post_thumbnail( $postId02 ) ?>
 
-		<li>
-      <div class="slide__wrap">
-			<a href="<?php the_permalink(); ?>" class="slide__wrap--link">
-			<!--画像を追加-->
-			<div class="slide__img">
-			<?php if( has_post_thumbnail() ): ?>
-				<?php the_post_thumbnail('medium'); ?>
-			<?php else: ?>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/no-image.gif" alt="no-img"/>
-			<?php endif; ?>
-			</div><!--  slide__img -->
+            </div><!--  slide__img -->
 
-			<!--whiteを追加-->
-			<div class="slide__white"></div>
+            <!--whiteを追加-->
+            <div class="slide__white"></div>
 
-			<div class="slide__txtblc">
-			<div class="slide__txtwrap">
+            <div class="slide__txtblc">
+              <div class="slide__txtwrap">
 
-				<div class="slide__cate">
-					<!--カテゴリ-->
-				<?php if (has_category()): ?>
-					<?php $postcat = get_the_category(); for($i = 0; count($postcat) > $i; $i++){
-					$postName = $postcat[$i]->name;
-					$postId = $postcat[$i]->slug;
-          ?>
-				<p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
+                <div class="slide__cate">
 
-				<?php } ?>
-				<?php endif; ?>
+                  <?php $postcat = get_the_category($postId02); for($i = 0; count($postcat) > $i; $i++){
+                      $postName = $postcat[$i]->name;
+                      $postId = $postcat[$i]->slug;
+                  ?>
+                  <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
 
-				</div><!-- slide__cate -->
+                <?php } ?>
 
-				<!--投稿日を表示-->
-				<span class="cate__date">
-					<time datetime="<?php echo get_the_date(); ?>">
-					<?php echo get_the_date(); ?>
-					</time>
-				</span>
+                </div><!-- slide__cate -->
 
-				<!--著者を表示-->
-				<span class="cate__author">by <?php the_author(); ?></span>
-			</div>
+                <!--投稿日を表示-->
+                <span class="cate__date">
+                  <time datetime="<?php echo $post_date02; ?>">
+                    <?php echo $post_date02; ?>
+                  </time>
+                </span>
 
-			<p class="slide__excerpt"><?php the_title(); ?></p>
-			</div>
-		</a>
-    </div>
-		</li>
+                <!--著者を表示-->
+                <span class="cate__author">by <?php echo get_the_author_meta( 'display_name', $user_id02 ); ?></span>
 
-		<?php
-		endforeach; // ループの終了
-		wp_reset_postdata(); // 直前のクエリを復元する
-		?>
+              </div>
+
+              <p class="slide__excerpt"><?php echo get_the_title( $postId02 ); ?></p>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <?php
+        $urlherobnr3 = get_field('herourl3');
+        $postId03 = url_to_postid( $urlherobnr3 );
+        $user_id03 = get_post_field( 'post_author', $postId03 );
+        $post_date03 = get_the_date( 'Y.m.d', $postId03 );
+        ?>
+      <li>
+        <div class="slide__wrap">
+          <a href="<?php echo get_permalink($postId03); ?>" class="slide__wrap--link">
+            <!--画像を追加-->
+            <div class="slide__img">
+              <?php echo get_the_post_thumbnail( $postId03 ) ?>
+
+            </div><!--  slide__img -->
+
+            <!--whiteを追加-->
+            <div class="slide__white"></div>
+
+            <div class="slide__txtblc">
+              <div class="slide__txtwrap">
+
+                <div class="slide__cate">
+
+                  <?php $postcat = get_the_category($postId03); for($i = 0; count($postcat) > $i; $i++){
+                      $postName = $postcat[$i]->name;
+                      $postId = $postcat[$i]->slug;
+                  ?>
+                  <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
+
+                <?php } ?>
+
+                </div><!-- slide__cate -->
+
+                <!--投稿日を表示-->
+                <span class="cate__date">
+                  <time datetime="<?php echo $post_date03; ?>">
+                    <?php echo $post_date03; ?>
+                  </time>
+                </span>
+
+                <!--著者を表示-->
+                <span class="cate__author">by <?php echo get_the_author_meta( 'display_name', $user_id03 ); ?></span>
+
+              </div>
+
+              <p class="slide__excerpt"><?php echo get_the_title( $postId03 ); ?></p>
+            </div>
+          </a>
+        </div>
+      </li>
+
 
       </ul>
     </div>
@@ -238,6 +193,12 @@
 
 
 
+
+  <!-- EDITOR'S CHOICE ------------------------------------------------->
+  <div class="index__inner">
+    <?php get_template_part('/template_parts/echoice'); ?>
+  </div><!-- index__inner -->
+  <!-- EDITOR'S CHOICE ------------------------------------------------->
   <div class="index__inner">
 
     <!-- TOP最新記事 -->
@@ -280,20 +241,14 @@
   <!-- HOT TAG -->
   <!-- <#?php get_template_part('template_parts/hottag'); ?> -->
   <!-- バナー設定 -->
+
+
   <?php get_template_part('template_parts/bnrs'); ?>
   <!-- SERIES -->
   <?php get_template_part('template_parts/series'); ?>
 
 
 
-
-
-  <!-- EDITOR'S CHOICE ------------------------------------------------->
-  <div class="index__inner">
-    <!-- SP用padding Blc -->
-    <?php get_template_part('/template_parts/echoice'); ?>
-  </div><!-- index__inner -->
-  <!-- EDITOR'S CHOICE ------------------------------------------------->
 
 
 
