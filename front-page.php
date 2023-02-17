@@ -135,6 +135,8 @@
         </div>
       </li>
 
+      <?php $value = get_field('herourl3') ; if(empty($value)) : else:?>
+	    <!-- 入力がある場合に表示させる -->
       <?php
         $urlherobnr3 = get_field('herourl3');
         $postId03 = url_to_postid( $urlherobnr3 );
@@ -185,7 +187,7 @@
           </a>
         </div>
       </li>
-
+      <?php endif;?>
 
       </ul>
     </div>

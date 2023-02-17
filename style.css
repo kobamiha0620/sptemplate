@@ -5234,7 +5234,7 @@ h2.confirm {
   align-items: start;
   display: flex;
 }
-.epicShop__name span {
+.epicShop__name--item {
   border: solid 1px #262626;
   border-radius: 12px;
   display: inline-block;
@@ -5244,7 +5244,7 @@ h2.confirm {
   margin-right: 5px;
   margin-top: 5px;
 }
-.epicShop__name b {
+.epicShop__name--ttl {
   margin-left: -60px;
   display: inline-block;
   padding-left: -60px;
@@ -5376,6 +5376,77 @@ h2.confirm {
   }
   .epicShop__shoplink {
     font-size: 13px;
+  }
+}
+.epicShop__insta {
+  width: 420px;
+  margin-right: 20px;
+}
+.epicShop__list {
+  width: 420px;
+  margin-right: 20px;
+  height: 420px;
+}
+.epicShop__list li img {
+  width: 420px;
+  height: 420px;
+}
+
+.epicShop__blc {
+  width: 360px;
+}
+
+@media screen and (max-width: 980px) {
+  .epicShop__wrapper {
+    display: flex;
+  }
+
+  .epicShop {
+    width: 100%;
+  }
+  .epicShop__insta {
+    width: 55%;
+  }
+  .epicShop__insta iframe {
+    max-width: 400px;
+  }
+  .epicShop__list {
+    width: 55%;
+    height: auto;
+  }
+  .epicShop__blc {
+    width: 40%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .epicShop__wrapper {
+    display: block;
+  }
+
+  .epicShop__blc {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .epicShop__list {
+    width: 100%;
+    height: auto;
+  }
+
+  .epicShop__list li img {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .epicShop__blc {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .epicShop__insta {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 60px;
   }
 }
 .horointro {
