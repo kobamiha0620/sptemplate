@@ -1315,3 +1315,27 @@ body.home {
     
       }
 }
+
+//追記
+//著者紹介
+.editorsIntro {
+
+
+    &__list {
+        margin-bottom: 5%;
+
+    }
+
+
+}
+
+.single__contents {
+    img {
+        margin: 0;
+    }
+    @media screen and (max-width: $BP) {
+        img {
+            margin: 0;
+        }
+    }
+}

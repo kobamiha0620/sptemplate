@@ -7614,6 +7614,19 @@ body.home .container__wrapper {
   right: 0;
 }
 
+.editorsIntro__list {
+  margin-bottom: 5%;
+}
+
+.single__contents img {
+  margin: 0;
+}
+@media screen and (max-width: 980px) {
+  .single__contents img {
+    margin: 0;
+  }
+}
+
 .wp-embed-footer {
   display: none !important;
 }
