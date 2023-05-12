@@ -813,7 +813,7 @@ body.home {
 
     &__list {
         width: 100%;
-
+        margin-bottom: 0;
         li {
             min-width: 65px;
             width: 20.2%;
@@ -1318,16 +1318,7 @@ body.home {
 
 //追記
 //著者紹介
-.editorsIntro {
 
-
-    &__list {
-        margin-bottom: 5%;
-
-    }
-
-
-}
 
 .single__contents {
     img {
