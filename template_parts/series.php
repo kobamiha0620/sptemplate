@@ -54,6 +54,30 @@
 
         <!--------------------
     　　 ----------------------
+        VEDAの処方箋
+        ----------------------
+        -------------------->
+        <div class="side__series--blc">
+        <a href="/category/veda/" class="side__series--link">
+                <!--画像を追加-->
+                <div class="side__series--img">
+                    <img src="https://femtech.tv/wp-content/uploads/2023/06/banner-26-3.jpg" alt="">
+                </div>
+
+                <div class="side__series--r">
+                    <!-- カテゴリslug名からカテゴリ情報の取得 -->
+
+                    <span class="cat-data cate-veda">VEDAの処方箋</span>
+                    <p class="side__series--excerpt">アーユルヴェーダ専門家・MOTOKOさんが教える、最古なのに最新のカラダのお話。</p>
+
+                </div>
+            </a>
+            <p class="side__series--catelink"><a href="/category/veda/">view All</a></p>
+            
+        </div><!--  /.side__series--blc -->
+
+        <!--------------------
+    　　 ----------------------
         お悩み相談
         ----------------------
         -------------------->

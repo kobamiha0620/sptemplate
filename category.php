@@ -33,6 +33,16 @@
             </div>
           </a>
         </li>
+        <li><a href="/category/veda/">
+            <div class="series__imgwrap"><img class="series__img"
+                src="https://femtech.tv/wp-content/uploads/2023/06/banner-26-3.jpg" alt="" width="100%" /></div>
+            <div class="series__r">
+              <p class="cat-data cate-veda">VEDAの処方箋</p>
+              <p class="series__excerpt">アーユルヴェーダ専門家・MOTOKOさんが教える、最古なのに最新のカラダのお話。</p>
+              <p class="series__catelink"><span>view All</span></p>
+            </div>
+          </a>
+        </li>
         <li><a href="/category/assistant/">
             <div class="series__imgwrap"><img class="series__img"
                 src="https://femtech.tv/wp-content/uploads/2022/03/image_onayami2.png" alt="" width="100%" /></div>
