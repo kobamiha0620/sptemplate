@@ -170,16 +170,19 @@
               display: flex;
               flex-wrap: wrap;
               justify-content: space-between;
+              display: block;
               a{
                   display: block;
               }
               li{
                   align-items: center;
                   width: 48%;   
+                  width: 100%;
               }
               .cat-data{
                   margin-right: 10px;
               }
+
           }
           
           &__excerpt{

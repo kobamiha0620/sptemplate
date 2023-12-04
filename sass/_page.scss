@@ -211,6 +211,7 @@
       }
     }
   }
+  
 }
 .page {
   .cate__date {
@@ -722,6 +723,24 @@ div#toc_container {
           object-fit: cover;
           margin: 0;
         }
+      }
+    }
+    @media screen and (max-width: $BP) {
+      .articles {
+        &__img {
+          width: 100%;
+          height: auto;
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: none;
+            position: relative;
+            display: inline-block;
+          }
+        }
+      }
+      .articles__list .articles__img--blc::before{
+        padding-top: 0;
       }
     }
   }

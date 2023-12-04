@@ -341,17 +341,25 @@ button[type="submit"]{
           }
           li{
               margin: 0 0 20px;
-              
           }
           .cat-data{
               color :#FFF;
               font-size: 12px;
-              
           }
           &--link{
             display: flex;
             align-items: start;
             justify-content: space-between;
+            @media screen and (max-width: $BP){
+              display: block;
+              .articles__img{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 12px;
+              }
+              .articles__txtwrap{
+              }
+            }
           }
       }
 

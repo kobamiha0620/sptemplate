@@ -893,7 +893,24 @@ div#toc_container .toc_list ul li a::before {
     object-fit: cover;
     margin: 0;
   }
-
+}
+@media screen and (max-width: 980px) and (max-width: 980px) {
+  #latestAll .articles__img {
+    width: 100%;
+    height: auto;
+  }
+  #latestAll .articles__img img {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    position: relative;
+    display: inline-block;
+  }
+  #latestAll .articles__list .articles__img--blc::before {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 980px) {
   .fortuneteller {
     margin: 10.6vw 0;
     border: solid 1px #c7c7c7;
@@ -1553,6 +1570,7 @@ body.search .sidebar-inner {
   color: #262626;
   line-height: 1.65;
   margin-bottom: 1.5em;
+  margin-bottom: 0;
 }
 .single__contentsinner p a {
   color: #DFA7A7;
@@ -2758,6 +2776,7 @@ div#toc_container .toc_list ul li a::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: block;
   }
   #categoryNew .articles__list a {
     display: block;
@@ -2765,6 +2784,7 @@ div#toc_container .toc_list ul li a::before {
   #categoryNew .articles__list li {
     align-items: center;
     width: 48%;
+    width: 100%;
   }
   #categoryNew .articles__list .cat-data {
     margin-right: 10px;
@@ -6378,6 +6398,16 @@ input[type=search]:focus {
   align-items: start;
   justify-content: space-between;
 }
+@media screen and (max-width: 980px) {
+  .articlesWrapper .articles__list--link {
+    display: block;
+  }
+  .articlesWrapper .articles__list--link .articles__img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
 .articlesWrapper .articles__excerpt {
   font-size: 17px;
   color: #262626;
@@ -6993,6 +7023,14 @@ body.home .container__wrapper {
 }
 #categoryNew .articles__list .cat-data {
   margin-right: 10px;
+}
+@media screen and (max-width: 980px) {
+  #categoryNew .articles__list {
+    display: block;
+  }
+  #categoryNew .articles__list li {
+    width: 100%;
+  }
 }
 #categoryNew .articles__excerpt {
   font-size: 13px;
@@ -7620,11 +7658,12 @@ body.home .container__wrapper {
 }
 
 .single__contents img {
-  margin: 0;
+  display: block;
+  margin: 0 0 3.6%;
 }
 @media screen and (max-width: 980px) {
   .single__contents img {
-    margin: 0;
+    margin: 0 0 3.6%;
   }
 }
 
