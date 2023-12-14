@@ -27,7 +27,9 @@
 
 	<!--システム・プラグイン用-->
 	<?php wp_head(); ?>
-
+	<?php if ( is_single() ): ?>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/ayurveda.js" type="text/javaScript" charset="utf-8"></script>
+	<?php endif; ?>
 </head>
 
 <body <?php body_class( ['drawer', 'drawer--left'] ) ; ?> style="background-color:#FFF; ">

@@ -11,8 +11,8 @@
             </li>
 
             <li>
-                <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_makiko.png" alt="Makiko">
-                <p class="editorsIntro__list--name">Makiko</p>
+                <img src="https://femtech.tv/wp-content/uploads/2023/12/img_yui.png" alt="Yui">
+                <p class="editorsIntro__list--name">Yui</p>
             </li>
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icon_yuka.png" alt="Yuka">
@@ -24,7 +24,7 @@
 
             <li>
                 <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_saki.png" alt="Saki">
-                <p class="editorsIntro__list--name">Sakio<br><span>産休中</span></p>
+                <p class="editorsIntro__list--name">Saki<br><span>産休中</span></p>
             </li>
             <li>
                 <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_masako.png" alt="Masako">
